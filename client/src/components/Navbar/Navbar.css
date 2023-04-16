@@ -1,0 +1,96 @@
+ @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;500&family=Source+Sans+Pro&display=swap");
+
+/* Navbar Styling */
+.navbar {
+  height: 10vh;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.navlogocontainer {
+  display: flex;
+  font-family: "Gluten", cursive;
+  align-items: center;
+}
+
+.navlogocontainer > h1 {
+  color: #000;
+  font-size: clamp(2rem, 2vw, 2rem);
+  cursor:pointer;
+  margin-left: 2rem;
+}
+
+.navlistcontainer {
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  align-items: center;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navlistelements {
+  margin: 0 10px;
+  padding: 10px 15px;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlistelements:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .navlogocontainer {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .navlogocontainer > h1 {
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+
+  .navlistcontainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navlist {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navlistelements {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .navlistcontainer {
+    display: none;
+  }
+}

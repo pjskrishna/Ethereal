@@ -1,0 +1,70 @@
+/* Loan Section */
+.loan-section {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.loan-text-wrapper {
+  margin: 60px;
+  width: 50%;
+}
+
+.loan-image-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.loan-text-wrapper > h1 {
+  font-weight: 800;
+  font-size: clamp(1rem, 3.2rem, 5rem);
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.loan-text-wrapper > h2 {
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1.5rem, 4rem);
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.loan-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-form-input {
+  background-color: #333;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  height: 50px;
+  margin: 15px 0;
+  width: 600px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+.loan-submit-button {
+  margin: 15px 0;
+  background-color: #333;
+  color: #fff;
+  height: 40px;
+  width: 160px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.loan-submit-button:hover {
+  background-color: #fff;
+  color: #333;
+}
